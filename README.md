@@ -38,3 +38,12 @@ https://pynative.com/python-generate-random-string/
 https://github.com/paul-wolf/strgen
 
 https://youtu.be/-qe66sKk-dQ?t=2873
+
+
+
+docker-compose -f docker-compose.staging.yml up -d --build
+
+
+../console python manage.py createsuperuser
+
+PS: atualizar documentação
