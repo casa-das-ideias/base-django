@@ -1,6 +1,5 @@
+app/env/
+.idea
 *.pyc
-__pycache
-.DS_Store
-.env
-.env.prod
-.env.prod.db
+*.pyo
+_db.pyc
