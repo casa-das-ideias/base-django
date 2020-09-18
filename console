@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
 docker-compose exec --user="app" web $*
+# docker-compose exec --user="root" web $*
