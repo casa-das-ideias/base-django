@@ -47,3 +47,37 @@ docker-compose -f docker-compose.staging.yml up -d --build
 ../console python manage.py createsuperuser
 
 PS: atualizar documentação
+
+
+## Docker
+
+### Removing containers
+
+```shell
+docker container stop $(docker container ls -aq)
+docker container rm $(docker container ls -aq)
+```
+
+### Removing dangling images
+
+```shell
+docker image prune
+```
+
+### Removing all unused images 
+
+```shell
+docker image prune -a
+```
+
+### Removing all unused volumes
+
+```shell
+docker volume prune
+```
+
+### Removing all unused network
+
+```shell
+docker network prune
+```
