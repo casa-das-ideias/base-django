@@ -33,16 +33,9 @@ Usando o gunicorn + nginx.
 
 [djecrety](https://djecrety.ir/)
 
-https://pynative.com/python-generate-random-string/
-
-https://github.com/paul-wolf/strgen
-
-https://youtu.be/-qe66sKk-dQ?t=2873
-
-
+## COMANDOS
 
 docker-compose -f docker-compose.staging.yml up -d --build
-
 
 ../console python manage.py createsuperuser
 
@@ -51,32 +44,32 @@ PS: atualizar documentação
 
 ## Docker
 
-### Removing containers
+### Removendo containers
 
 ```shell
 docker container stop $(docker container ls -aq)
 docker container rm $(docker container ls -aq)
 ```
 
-### Removing dangling images
+### Removendo imagens pendentes
 
 ```shell
 docker image prune
 ```
 
-### Removing all unused images 
+### Removendo todas as imagens não utilizadas
 
 ```shell
 docker image prune -a
 ```
 
-### Removing all unused volumes
+### Removendo todos os volumes não usados
 
 ```shell
 docker volume prune
 ```
 
-### Removing all unused network
+### Removendo todas as redes não utilizadas
 
 ```shell
 docker network prune
